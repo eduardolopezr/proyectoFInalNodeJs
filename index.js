@@ -1,4 +1,5 @@
 //dependences
+const morgan =  require("morgan");
 const express = require('express');
 const app = express();
 
@@ -9,6 +10,12 @@ const user = require('./routes/user');
 //middleware
 const index = require("./middleware/index");
 const notFound = require("./middleware/notFound");
+
+app.use(morgan('dev'));
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+
+
 
 app.get("/", index);
 
