@@ -4,17 +4,26 @@
   "description": "Final project Nodejs",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardolora7/proyectoFInalNodeJs.git"
+  },
   "keywords": [
-    "api",
-    "res",
+    "node",
     "express",
-    "nodejs"
+    "jwt"
   ],
   "author": "Eduardo López",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardolora7/proyectoFInalNodeJs/issues"
+  },
+  "homepage": "https://github.com/eduardolora7/proyectoFInalNodeJs#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
   }
 }
