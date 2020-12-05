@@ -1,0 +1,20 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "Final project Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "res",
+    "express",
+    "nodejs"
+  ],
+  "author": "Eduardo López",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
