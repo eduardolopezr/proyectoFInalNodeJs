@@ -1,14 +1,21 @@
+//dependences
 const express = require('express');
 const app = express();
-/*
-req= peticion del cliente
-res= respuesta del servidor
 
-*/ 
-app.get("/", (req, res, next)=>{
-    res.status(200);
-    res.send("Bienvenidosssss");
-});
-app.listen(3000, ()=>{
-    console.log("Server is running");
-});
+//routes
+const humanResources = require('./routes/humanResources');
+const user = require('./routes/user');
+
+//middleware
+const index = require("./middleware/index");
+const notFound = require("./middleware/notFound");
+
+app.get("/", index);
+
+app.use("/user", user);
+app.use("/humanresources", humanResources);
+app.use(notFound);
+
+app.listen(process.env.PORT || 3000, ()=>{
+    console.log("Server is running...");
+}); 
