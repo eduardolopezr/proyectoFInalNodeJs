@@ -11,6 +11,7 @@ function init(){
         });
     }
 }
+//FUNCIÓN PARA BUSCAR USUARIOS
 function search(){
 
     var employee_id =  document.getElementById('input-id').value;

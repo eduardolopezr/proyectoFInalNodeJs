@@ -10,7 +10,7 @@ function init(){
         });
     }
 }
-
+//FUNCIÓN PARA AÑADIR NUEVO USUARIO
 function addEmployee(){
     var name = document.getElementById('input-name').value;
     var lastName = document.getElementById('input-lastName').value;

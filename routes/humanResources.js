@@ -63,11 +63,6 @@ humanResources.put("/edit", async(req, res, next)=>{
 });
 
 //RUTAS PARA BUSCAR USUARIOS 
-// humanResources.get("/", async (req, res, next)=>{
-//     const employee = await db.query("SELECT * FROM employees");
-//     return res.status(200).json({code: 1, message: employee});
-
-// });
 humanResources.post('/search', async (req, res, next)=>{
 
     const {employee_id}= req.body;
@@ -82,13 +77,4 @@ humanResources.post('/search', async (req, res, next)=>{
         }
     }
 });
-// humanResources.post('/:name([A-Za-z]+)', async (req, res, next)=>{
-//     const emloyee_name = req.params.name;
-//     const emp = await db.query("SELECT * FROM employees WHERE employee_name ="+emloyee_name+";");
-//     if(emp.length>0){
-//         return res.status(200).json({code:1, message: emp});
-//     }
-//     return res.status(404).send("Empleado no encontrado");
-
-// });
 module.exports = humanResources;

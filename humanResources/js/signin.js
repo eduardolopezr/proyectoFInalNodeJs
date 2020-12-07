@@ -10,7 +10,7 @@ function init(){
         window.location.href="humanResources.html";
     }
 }
-
+//FUNCIÓN PARA REGISTRARSE
 function signin(){
     var name = document.getElementById('input-name').value;
     var lastName = document.getElementById('input-lastName').value;

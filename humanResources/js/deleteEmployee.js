@@ -11,7 +11,7 @@ function init(){
         });
     }
 }
-
+//FUNCIÓN PARA ELIMINAR UN USUARIO
 function deleteEmployee(){
     var employee_id =  document.getElementById('input-id').value;
     //alert(employee_id);

@@ -11,7 +11,7 @@ function init(){
         });
     }
 }
-
+//FUNCIÓN PARA EDITAR USUARIOS
 function editEmployee(){
     var id = document.getElementById('input-id').value;
     var name = document.getElementById('input-name').value;
