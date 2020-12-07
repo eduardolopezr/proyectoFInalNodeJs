@@ -24,7 +24,7 @@ humanResources.post("/", async(req, res, next)=>{
     return res.status(500).json({code: 500, message: "Campos incompletos"})
 });
 
-//RUTA PARA BORRAR USUARIOS 
+//RUTA PARA BORRAR USUARIOS REGISTRADOS
 humanResources.delete("/delete", async (req, res, next)=>{
     const {employee_id} = req.body;
     const query = `DELETE FROM employees WHERE employee_id = ${employee_id}`;
@@ -38,7 +38,7 @@ humanResources.delete("/delete", async (req, res, next)=>{
 });
 
 
-//RUTA PARA ACTUALIZAR USUARIOS 
+//RUTA PARA ACTUALIZAR USUARIOS REGISTRADOS
 humanResources.put("/edit", async(req, res, next)=>{
     const {employee_id}=req.body;
     const {employee_name, employee_lastName, employee_department, employee_mail, employee_password} = req.body;
