@@ -15,7 +15,10 @@ function init(){
         document.querySelector('.btn-danger').addEventListener('click', function(){
             window.location.href = "deleteEmployee.html";
         });
-
+        document.querySelector('.btn-warning').addEventListener('click', function(){
+            localStorage.removeItem("token");
+            window.location.href="login.html";
+    });
     }else{
         window.location.href="index.html";
     }
